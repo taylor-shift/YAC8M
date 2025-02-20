@@ -1,0 +1,357 @@
+# ninja log v6
+61	185	7616398175329073	include/SDL2/SDL.h	9729dd4bf1160e81
+61	185	7616398175329073	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL.h	9729dd4bf1160e81
+67	191	7616398175364267	include/SDL2/SDL_assert.h	36c0f75ce0c5954c
+67	191	7616398175364267	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_assert.h	36c0f75ce0c5954c
+71	196	7616398175421816	include/SDL2/SDL_atomic.h	294bfe2013249da7
+71	196	7616398175421816	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_atomic.h	294bfe2013249da7
+75	202	7616398175456896	include/SDL2/SDL_audio.h	a52509d61fa72d78
+75	202	7616398175456896	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_audio.h	a52509d61fa72d78
+79	208	7616398175516963	include/SDL2/SDL_bits.h	589f18ab2b2e0bb4
+79	208	7616398175516963	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_bits.h	589f18ab2b2e0bb4
+84	214	7616398175562420	include/SDL2/SDL_blendmode.h	68a200799ab197d5
+84	214	7616398175562420	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_blendmode.h	68a200799ab197d5
+88	220	7616398175612478	include/SDL2/SDL_clipboard.h	f0cd5e68d1f6291
+88	220	7616398175612478	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_clipboard.h	f0cd5e68d1f6291
+93	225	7616398175667609	include/SDL2/SDL_copying.h	2ae125fe950f029c
+93	225	7616398175667609	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_copying.h	2ae125fe950f029c
+98	230	7616398175717655	include/SDL2/SDL_cpuinfo.h	bd1457578ddb2ec6
+98	230	7616398175717655	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_cpuinfo.h	bd1457578ddb2ec6
+103	235	7616398175782870	include/SDL2/SDL_egl.h	5fc64c78584e67bb
+103	235	7616398175782870	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_egl.h	5fc64c78584e67bb
+108	241	7616398175822911	include/SDL2/SDL_endian.h	e30d3bb6ce607485
+108	241	7616398175822911	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_endian.h	e30d3bb6ce607485
+114	246	7616398175868005	include/SDL2/SDL_error.h	69ee3927e9f3ea0f
+114	246	7616398175868005	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_error.h	69ee3927e9f3ea0f
+119	252	7616398175933133	include/SDL2/SDL_events.h	6808a0fee09b5b94
+119	252	7616398175933133	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_events.h	6808a0fee09b5b94
+124	257	7616398175988232	include/SDL2/SDL_filesystem.h	57a88502164f68a1
+124	257	7616398175988232	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_filesystem.h	57a88502164f68a1
+129	263	7616398176028270	include/SDL2/SDL_gamecontroller.h	63e4c8d0c9a9cb7c
+129	263	7616398176028270	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_gamecontroller.h	63e4c8d0c9a9cb7c
+135	268	7616398176073440	include/SDL2/SDL_gesture.h	617832d27c2df30c
+135	268	7616398176073440	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_gesture.h	617832d27c2df30c
+140	273	7616398176123485	include/SDL2/SDL_guid.h	8cc314af69f07054
+140	273	7616398176123485	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_guid.h	8cc314af69f07054
+145	278	7616398176178606	include/SDL2/SDL_haptic.h	c41eab9b9e06b36b
+145	278	7616398176178606	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_haptic.h	c41eab9b9e06b36b
+151	283	7616398176243682	include/SDL2/SDL_hidapi.h	48c2fe327fd146bc
+151	283	7616398176243682	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_hidapi.h	48c2fe327fd146bc
+156	289	7616398176294541	include/SDL2/SDL_hints.h	7e61e813b50cd87e
+156	289	7616398176294541	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_hints.h	7e61e813b50cd87e
+161	294	7616398176334577	include/SDL2/SDL_joystick.h	4ce8f863b69e150a
+161	294	7616398176334577	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_joystick.h	4ce8f863b69e150a
+165	299	7616398176399676	include/SDL2/SDL_keyboard.h	e79fd28468c27fe4
+165	299	7616398176399676	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_keyboard.h	e79fd28468c27fe4
+170	305	7616398176429706	include/SDL2/SDL_keycode.h	39906f8a9175affe
+170	305	7616398176429706	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_keycode.h	39906f8a9175affe
+175	310	7616398176484917	include/SDL2/SDL_loadso.h	59cfc6a57cc4dfb0
+175	310	7616398176484917	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_loadso.h	59cfc6a57cc4dfb0
+180	315	7616398176534965	include/SDL2/SDL_locale.h	84287eb4c5daa02b
+180	315	7616398176534965	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_locale.h	84287eb4c5daa02b
+186	321	7616398176580055	include/SDL2/SDL_log.h	71c8e7092680e6c5
+186	321	7616398176580055	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_log.h	71c8e7092680e6c5
+191	326	7616398176645144	include/SDL2/SDL_main.h	da6ebf7e88f755e5
+191	326	7616398176645144	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_main.h	da6ebf7e88f755e5
+196	331	7616398176695335	include/SDL2/SDL_messagebox.h	b988f4f5a13c0067
+196	331	7616398176695335	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_messagebox.h	b988f4f5a13c0067
+202	337	7616398176745382	include/SDL2/SDL_metal.h	a0d92c9ec95b0c07
+202	337	7616398176745382	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_metal.h	a0d92c9ec95b0c07
+208	342	7616398176810502	include/SDL2/SDL_misc.h	b6cbe41eba2a4c80
+208	342	7616398176810502	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_misc.h	b6cbe41eba2a4c80
+215	347	7616398176865686	include/SDL2/SDL_mouse.h	ac764a3f22b8bca2
+215	347	7616398176865686	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_mouse.h	ac764a3f22b8bca2
+220	353	7616398176930923	include/SDL2/SDL_mutex.h	e37c9e0d4681f05
+220	353	7616398176930923	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_mutex.h	e37c9e0d4681f05
+225	358	7616398176986098	include/SDL2/SDL_name.h	e9589ae441dd2e62
+225	358	7616398176986098	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_name.h	e9589ae441dd2e62
+230	364	7616398177016132	include/SDL2/SDL_opengl.h	8eddda36ebc9c1ed
+230	364	7616398177016132	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengl.h	8eddda36ebc9c1ed
+236	370	7616398177091255	include/SDL2/SDL_opengl_glext.h	cabdc79d03e49d40
+236	370	7616398177091255	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengl_glext.h	cabdc79d03e49d40
+241	375	7616398177131287	include/SDL2/SDL_opengles.h	25001837bf9e7fb3
+241	375	7616398177131287	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengles.h	25001837bf9e7fb3
+247	380	7616398177176483	include/SDL2/SDL_opengles2.h	1e26dd4e149e6a2d
+247	380	7616398177176483	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengles2.h	1e26dd4e149e6a2d
+252	386	7616398177251718	include/SDL2/SDL_opengles2_gl2.h	daebaca8027c1baa
+252	386	7616398177251718	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengles2_gl2.h	daebaca8027c1baa
+258	392	7616398177291772	include/SDL2/SDL_opengles2_gl2ext.h	b3d14d4cc56b2c16
+258	392	7616398177291772	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengles2_gl2ext.h	b3d14d4cc56b2c16
+263	397	7616398177341816	include/SDL2/SDL_opengles2_gl2platform.h	9d3d0249d7881b27
+263	397	7616398177341816	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengles2_gl2platform.h	9d3d0249d7881b27
+268	402	7616398177396913	include/SDL2/SDL_opengles2_khrplatform.h	cc3d2c803afc93f2
+268	402	7616398177396913	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_opengles2_khrplatform.h	cc3d2c803afc93f2
+273	408	7616398177452273	include/SDL2/SDL_pixels.h	eeb6d6e5d488f7bd
+273	408	7616398177452273	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_pixels.h	eeb6d6e5d488f7bd
+279	413	7616398177512353	include/SDL2/SDL_platform.h	d7c63ae7e9217c2c
+279	413	7616398177512353	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_platform.h	d7c63ae7e9217c2c
+284	419	7616398177567443	include/SDL2/SDL_power.h	87555f246397a28f
+284	419	7616398177567443	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_power.h	87555f246397a28f
+289	424	7616398177607475	include/SDL2/SDL_quit.h	d2a39c7f27543779
+289	424	7616398177607475	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_quit.h	d2a39c7f27543779
+294	430	7616398177662646	include/SDL2/SDL_rect.h	e2c049b6808b3752
+294	430	7616398177662646	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_rect.h	e2c049b6808b3752
+299	435	7616398177722711	include/SDL2/SDL_render.h	a57469b12cceccd3
+299	435	7616398177722711	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_render.h	a57469b12cceccd3
+305	440	7616398177777815	include/SDL2/SDL_rwops.h	5045216104f5c410
+305	440	7616398177777815	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_rwops.h	5045216104f5c410
+310	445	7616398177827855	include/SDL2/SDL_scancode.h	b1f74311636b375e
+310	445	7616398177827855	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_scancode.h	b1f74311636b375e
+315	451	7616398177873046	include/SDL2/SDL_sensor.h	93ec9cb35e7b2716
+315	451	7616398177873046	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_sensor.h	93ec9cb35e7b2716
+321	456	7616398177928139	include/SDL2/SDL_shape.h	d21c2739bc248bc6
+321	456	7616398177928139	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_shape.h	d21c2739bc248bc6
+326	462	7616398177982550	include/SDL2/SDL_stdinc.h	90787c4765c6c7ac
+326	462	7616398177982550	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_stdinc.h	90787c4765c6c7ac
+332	467	7616398178047645	include/SDL2/SDL_surface.h	6490bc0550b2b731
+332	467	7616398178047645	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_surface.h	6490bc0550b2b731
+337	468	7616398178087707	include/SDL2/SDL_system.h	dd8acb11dcb53752
+337	468	7616398178087707	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_system.h	dd8acb11dcb53752
+343	468	7616398178142770	include/SDL2/SDL_syswm.h	93aa621f77e7e9de
+343	468	7616398178142770	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_syswm.h	93aa621f77e7e9de
+347	469	7616398178202961	include/SDL2/SDL_test.h	abc48da9d5029e2d
+347	469	7616398178202961	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test.h	abc48da9d5029e2d
+353	469	7616398178258049	include/SDL2/SDL_test_assert.h	ba56dc13cd33fbd1
+353	469	7616398178258049	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_assert.h	ba56dc13cd33fbd1
+359	469	7616398178298094	include/SDL2/SDL_test_common.h	620b75d7a2db4a7d
+359	469	7616398178298094	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_common.h	620b75d7a2db4a7d
+364	470	7616398178363279	include/SDL2/SDL_test_compare.h	5aa26d2780d55f2f
+364	470	7616398178363279	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_compare.h	5aa26d2780d55f2f
+370	470	7616398178403324	include/SDL2/SDL_test_crc32.h	4d40dfc559e83337
+370	470	7616398178403324	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_crc32.h	4d40dfc559e83337
+375	470	7616398178468436	include/SDL2/SDL_test_font.h	e8238129f7494500
+375	470	7616398178468436	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_font.h	e8238129f7494500
+380	471	7616398178528496	include/SDL2/SDL_test_fuzzer.h	8cdee2c5445ee803
+380	471	7616398178528496	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_fuzzer.h	8cdee2c5445ee803
+387	471	7616398178573682	include/SDL2/SDL_test_harness.h	d2ff3fe3c2fe3c11
+387	471	7616398178573682	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_harness.h	d2ff3fe3c2fe3c11
+392	471	7616398178633739	include/SDL2/SDL_test_images.h	d53add2c8a522ba0
+392	471	7616398178633739	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_images.h	d53add2c8a522ba0
+397	472	7616398178698857	include/SDL2/SDL_test_log.h	c3909bf204241888
+397	472	7616398178698857	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_log.h	c3909bf204241888
+403	472	7616398178743912	include/SDL2/SDL_test_md5.h	efbbb68b2f164de4
+403	472	7616398178743912	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_md5.h	efbbb68b2f164de4
+408	472	7616398178794644	include/SDL2/SDL_test_memory.h	a20dd96542441123
+408	472	7616398178794644	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_memory.h	a20dd96542441123
+413	472	7616398178869780	include/SDL2/SDL_test_random.h	bebe76bf0fdece58
+413	472	7616398178869780	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_test_random.h	bebe76bf0fdece58
+419	473	7616398178990123	include/SDL2/SDL_thread.h	9e6deff03a6a6285
+419	473	7616398178990123	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_thread.h	9e6deff03a6a6285
+425	473	7616398178990123	include/SDL2/SDL_timer.h	854c24f3943fbdba
+425	473	7616398178990123	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_timer.h	854c24f3943fbdba
+430	473	7616398179030143	include/SDL2/SDL_touch.h	a3a9fb87f0955792
+430	473	7616398179030143	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_touch.h	a3a9fb87f0955792
+435	474	7616398179075327	include/SDL2/SDL_types.h	472d10d5b787f381
+435	474	7616398179075327	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_types.h	472d10d5b787f381
+440	474	7616398179135390	include/SDL2/SDL_version.h	5d4c8e85d06ad051
+440	474	7616398179135390	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_version.h	5d4c8e85d06ad051
+445	478	7616398179180496	include/SDL2/SDL_video.h	2f65c8a971079994
+445	478	7616398179180496	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_video.h	2f65c8a971079994
+451	482	7616398179220527	include/SDL2/SDL_vulkan.h	aae082916017023c
+451	482	7616398179220527	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/SDL_vulkan.h	aae082916017023c
+456	487	7616398179275761	include/SDL2/begin_code.h	671eefa8c0f041ca
+456	487	7616398179275761	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/begin_code.h	671eefa8c0f041ca
+462	492	7616398179325808	include/SDL2/close_code.h	caed0cc0e1e2aebf
+462	492	7616398179325808	C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-rel/include/SDL2/close_code.h	caed0cc0e1e2aebf
+541	699	7616398179866796	CMakeFiles/SDL2.dir/src/audio/SDL_audiodev.c.obj	bdecfe8a331c09fe
+523	706	7616398179676435	CMakeFiles/SDL2.dir/src/SDL_utils.c.obj	bf8a6b1bfc7ba91e
+506	711	7616398179506175	CMakeFiles/SDL2.dir/src/SDL_error.c.obj	f8415a93fa349761
+527	716	7616398179716475	CMakeFiles/SDL2.dir/src/atomic/SDL_atomic.c.obj	176fb7694e5ad347
+509	722	7616398179546212	CMakeFiles/SDL2.dir/src/SDL_guid.c.obj	642c016dd97cda55
+513	728	7616398179581296	CMakeFiles/SDL2.dir/src/SDL_hints.c.obj	a4862e4d5457187c
+548	800	7616398179931898	CMakeFiles/SDL2.dir/src/audio/SDL_mixer.c.obj	ca2df9b285d16cd6
+516	810	7616398179611326	CMakeFiles/SDL2.dir/src/SDL_list.c.obj	5f6eb37441f28e3f
+561	818	7616398180062595	CMakeFiles/SDL2.dir/src/events/SDL_clipboardevents.c.obj	f33416e7987bac66
+565	826	7616398180102646	CMakeFiles/SDL2.dir/src/events/SDL_displayevents.c.obj	2bfa4cc14ba6f1ca
+545	832	7616398179896828	CMakeFiles/SDL2.dir/src/audio/SDL_audiotypecvt.c.obj	dfc7f14952cce47e
+503	840	7616398179476149	CMakeFiles/SDL2.dir/src/SDL_dataqueue.c.obj	1e361a4981e21b4a
+551	847	7616398179966991	CMakeFiles/SDL2.dir/src/audio/SDL_wave.c.obj	e4e48f338f4b114c
+530	954	7616398179751642	CMakeFiles/SDL2.dir/src/atomic/SDL_spinlock.c.obj	f5e49e89673d603f
+706	961	7616398181514276	CMakeFiles/SDL2.dir/src/events/SDL_keysym_to_scancode.c.obj	c6d55c00b93e0533
+722	967	7616398181674620	CMakeFiles/SDL2.dir/src/events/SDL_scancode_tables.c.obj	e3b9e3f2496d4df1
+569	975	7616398180132674	CMakeFiles/SDL2.dir/src/events/SDL_dropevents.c.obj	5ce7b646f9a78de4
+555	983	7616398179997019	CMakeFiles/SDL2.dir/src/cpuinfo/SDL_cpuinfo.c.obj	7e439309117760ed
+700	991	7616398181443952	CMakeFiles/SDL2.dir/src/events/SDL_keyboard.c.obj	368f2594901dd682
+520	999	7616398179646387	CMakeFiles/SDL2.dir/src/SDL_log.c.obj	ec212f2704cdae57
+538	1008	7616398179831730	CMakeFiles/SDL2.dir/src/audio/SDL_audiocvt.c.obj	7213d2304f6c7ce5
+575	1017	7616398180207790	CMakeFiles/SDL2.dir/src/events/SDL_gesture.c.obj	59067c4361c0a5aa
+810	1039	7616398182549505	CMakeFiles/SDL2.dir/src/events/imKStoUCS.c.obj	a66981b9353e56a1
+717	1087	7616398181619417	CMakeFiles/SDL2.dir/src/events/SDL_quit.c.obj	b36837206117c5d5
+826	1096	7616398182704794	CMakeFiles/SDL2.dir/src/haptic/SDL_haptic.c.obj	450c8ca93b3dc011
+801	1108	7616398182454379	CMakeFiles/SDL2.dir/src/events/SDL_windowevents.c.obj	9c58a9a5bcaa44c
+493	1119	7616398179380911	CMakeFiles/SDL2main.dir/src/main/windows/SDL_windows_main.c.obj	b6c4e1394416e4c8
+496	1130	7616398179410938	CMakeFiles/SDL2.dir/src/SDL.c.obj	d9fe56f2dae9e5da
+728	1138	7616398181731050	CMakeFiles/SDL2.dir/src/events/SDL_touch.c.obj	9c0496f9575d8a15
+499	1149	7616398179430962	CMakeFiles/SDL2.dir/src/SDL_assert.c.obj	d67e8548c89ad669
+991	1201	7616398184367353	CMakeFiles/SDL2.dir/src/libm/e_log.c.obj	60d6415d20eee7ce
+975	1210	7616398184197022	CMakeFiles/SDL2.dir/src/libm/e_exp.c.obj	445aef570eb2a4de
+968	1219	7616398184125894	CMakeFiles/SDL2.dir/src/libm/e_atan2.c.obj	cd0bf37795ffc604
+961	1228	7616398184065833	CMakeFiles/SDL2.dir/src/joystick/controller_type.c.obj	93e8cc288e2c417e
+534	1286	7616398179791687	CMakeFiles/SDL2.dir/src/audio/SDL_audio.c.obj	339136a574f5533f
+1000	1294	7616398184442444	CMakeFiles/SDL2.dir/src/libm/e_log10.c.obj	597f5342a0c5164c
+983	1302	7616398184282225	CMakeFiles/SDL2.dir/src/libm/e_fmod.c.obj	20c6b6a7e0c96481
+1009	1309	7616398184532684	CMakeFiles/SDL2.dir/src/libm/e_pow.c.obj	db682fc580079e58
+818	1319	7616398182629597	CMakeFiles/SDL2.dir/src/file/SDL_rwops.c.obj	1d7f47d4a47ec3f8
+840	1328	7616398182855094	CMakeFiles/SDL2.dir/src/joystick/SDL_gamecontroller.c.obj	55a848cea403c325
+712	1365	7616398181569378	CMakeFiles/SDL2.dir/src/events/SDL_mouse.c.obj	647ef7402278040f
+572	1377	7616398180167755	CMakeFiles/SDL2.dir/src/events/SDL_events.c.obj	50a1aa63aa1d3d46
+1039	1382	7616398184843245	CMakeFiles/SDL2.dir/src/libm/e_sqrt.c.obj	6585e22111b83207
+1139	1388	7616398185827027	CMakeFiles/SDL2.dir/src/libm/s_copysign.c.obj	991ec87ed2363b28
+1108	1393	7616398185529795	CMakeFiles/SDL2.dir/src/libm/k_sin.c.obj	540efe2b9e7693b0
+1088	1398	7616398185329314	CMakeFiles/SDL2.dir/src/libm/k_cos.c.obj	4310cc8673e5f0ab
+1119	1403	7616398185641691	CMakeFiles/SDL2.dir/src/libm/k_tan.c.obj	20168816d624e5d3
+1131	1409	7616398185756953	CMakeFiles/SDL2.dir/src/libm/s_atan.c.obj	d3ad9e0d8cec2bd8
+1018	1414	7616398184627821	CMakeFiles/SDL2.dir/src/libm/e_rem_pio2.c.obj	be99f9edfda5c117
+1149	1459	7616398185942337	CMakeFiles/SDL2.dir/src/libm/s_cos.c.obj	2b94093954c4857
+1096	1507	7616398185414636	CMakeFiles/SDL2.dir/src/libm/k_rem_pio2.c.obj	45872852b181fbda
+1303	1517	7616398187476119	CMakeFiles/SDL2.dir/src/misc/SDL_url.c.obj	f82297cbb42d7c30
+1202	1526	7616398186468718	CMakeFiles/SDL2.dir/src/libm/s_fabs.c.obj	eaa6f9c162297127
+1287	1533	7616398187325760	CMakeFiles/SDL2.dir/src/libm/s_tan.c.obj	d21c71bc3a3eba07
+1219	1540	7616398186644072	CMakeFiles/SDL2.dir/src/libm/s_scalbn.c.obj	e0df95750ba9b10e
+1210	1547	7616398186553977	CMakeFiles/SDL2.dir/src/libm/s_floor.c.obj	d1efcf54993eb0ae
+1229	1554	7616398186729209	CMakeFiles/SDL2.dir/src/libm/s_sin.c.obj	ecfc72dc5f1bfe45
+1294	1561	7616398187390865	CMakeFiles/SDL2.dir/src/locale/SDL_locale.c.obj	f5634f5da485f6ec
+832	1572	7616398182769917	CMakeFiles/SDL2.dir/src/hidapi/SDL_hidapi.c.obj	4b46232ee44ddd35
+848	1590	7616398182930414	CMakeFiles/SDL2.dir/src/joystick/SDL_joystick.c.obj	a76eca8dee359088
+1310	1643	7616398187551213	CMakeFiles/SDL2.dir/src/power/SDL_power.c.obj	b08d5158956d861c
+1319	1651	7616398187646353	CMakeFiles/SDL2.dir/src/render/SDL_d3dmath.c.obj	e63f2a59cdf2a387
+954	1668	7616398183990636	CMakeFiles/SDL2.dir/src/joystick/SDL_steam_virtual_gamepad.c.obj	99db0bf58cf6f505
+1366	1674	7616398188107276	CMakeFiles/SDL2.dir/src/render/SDL_yuv_sw.c.obj	97c1aa71b070e532
+558	1685	7616398180027047	CMakeFiles/SDL2.dir/src/dynapi/SDL_dynapi.c.obj	e1dfd61d67bc419d
+1459	1726	7616398189044705	CMakeFiles/SDL2.dir/src/render/opengles/SDL_render_gles.c.obj	d0f3d1cbf64ab347
+1526	1773	7616398189710563	CMakeFiles/SDL2.dir/src/render/ps2/SDL_render_ps2.c.obj	ef506978577d0411
+1534	1782	7616398189785832	CMakeFiles/SDL2.dir/src/render/psp/SDL_render_psp.c.obj	6b69a07d595864d5
+1668	1837	7616398191135677	CMakeFiles/SDL2.dir/src/render/vitagxm/SDL_render_vita_gxm.c.obj	f7a3296926921c45
+1554	1851	7616398189996282	CMakeFiles/SDL2.dir/src/render/software/SDL_blendpoint.c.obj	b8b366311f18da
+1572	1861	7616398190166694	CMakeFiles/SDL2.dir/src/render/software/SDL_drawpoint.c.obj	486a7ee7fa8a6568
+1518	1872	7616398189625419	CMakeFiles/SDL2.dir/src/render/opengles2/SDL_shaders_gles2.c.obj	15eb277b56d7b487
+1686	1913	7616398191306827	CMakeFiles/SDL2.dir/src/render/vitagxm/SDL_render_vita_gxm_tools.c.obj	808fb2039646b644
+1675	1922	7616398191200793	CMakeFiles/SDL2.dir/src/render/vitagxm/SDL_render_vita_gxm_memory.c.obj	3759677d72254a82
+1562	1932	7616398190071537	CMakeFiles/SDL2.dir/src/render/software/SDL_drawline.c.obj	b47ead382658b41f
+1415	2038	7616398188593748	CMakeFiles/SDL2.dir/src/render/opengl/SDL_shaders_gl.c.obj	5eb14d27fda2c084
+1774	2048	7616398192190950	CMakeFiles/SDL2.dir/src/stdlib/SDL_crc16.c.obj	663771221de6d1f3
+1383	2061	7616398188277632	CMakeFiles/SDL2.dir/src/render/direct3d/SDL_shaders_d3d.c.obj	800825e569978812
+1328	2071	7616398187726454	CMakeFiles/SDL2.dir/src/render/SDL_render.c.obj	b347b78e5fd3a14
+1508	2083	7616398189530023	CMakeFiles/SDL2.dir/src/render/opengles2/SDL_render_gles2.c.obj	e2660defc5d1ad
+1862	2132	7616398193068258	CMakeFiles/SDL2.dir/src/stdlib/SDL_malloc.c.obj	7046aaef8107c104
+1591	2143	7616398190357265	CMakeFiles/SDL2.dir/src/render/software/SDL_render_sw.c.obj	d28cc7de77afcf3c
+1782	2152	7616398192276209	CMakeFiles/SDL2.dir/src/stdlib/SDL_crc32.c.obj	2690670212e25840
+1393	2165	7616398188382862	CMakeFiles/SDL2.dir/src/render/direct3d11/SDL_shaders_d3d11.c.obj	858916bc256f4b84
+1540	2179	7616398189850916	CMakeFiles/SDL2.dir/src/render/software/SDL_blendfillrect.c.obj	40e26d9c22f22868
+1403	2191	7616398188488500	CMakeFiles/SDL2.dir/src/render/direct3d12/SDL_shaders_d3d12.c.obj	e4a51dbe8b9069ac
+1913	2226	7616398193584472	CMakeFiles/SDL2.dir/src/stdlib/SDL_qsort.c.obj	a704d9bd0ef2f7cb
+1873	2234	7616398193183550	CMakeFiles/SDL2.dir/src/stdlib/SDL_mslibc.c.obj	92776c196a71f0e6
+1652	2284	7616398190963738	CMakeFiles/SDL2.dir/src/render/software/SDL_triangle.c.obj	f7ab2f8f1ae636d1
+1643	2298	7616398190883458	CMakeFiles/SDL2.dir/src/render/software/SDL_rotate.c.obj	b298dd1bc67402d4
+1548	2305	7616398189931017	CMakeFiles/SDL2.dir/src/render/software/SDL_blendline.c.obj	ea526a39aae427bf
+1852	2311	7616398192973081	CMakeFiles/SDL2.dir/src/stdlib/SDL_iconv.c.obj	9f8a7393d5a87ee5
+1933	2364	7616398193774929	CMakeFiles/SDL2.dir/src/stdlib/SDL_string.c.obj	9d19aab0fdfbad65
+1837	2377	7616398192822699	CMakeFiles/SDL2.dir/src/stdlib/SDL_getenv.c.obj	bf2f0af23bad9b8d
+2039	2386	7616398194842153	CMakeFiles/SDL2.dir/src/stdlib/SDL_strtokr.c.obj	d97a49a514a5b6ca
+1923	2394	7616398193679632	CMakeFiles/SDL2.dir/src/stdlib/SDL_stdlib.c.obj	2472be873817360e
+1727	2409	7616398191720192	CMakeFiles/SDL2.dir/src/sensor/SDL_sensor.c.obj	14d00eadd3fcd691
+1409	2425	7616398188528539	CMakeFiles/SDL2.dir/src/render/opengl/SDL_render_gl.c.obj	fd328f2e45ae054e
+2133	2563	7616398195780175	CMakeFiles/SDL2.dir/src/video/SDL_blit_0.c.obj	f2b39f286a78888d
+2235	2597	7616398196802347	CMakeFiles/SDL2.dir/src/video/SDL_bmp.c.obj	a0cec76c90b34c22
+2048	2611	7616398194932701	CMakeFiles/SDL2.dir/src/thread/SDL_thread.c.obj	8198a165641ad7b7
+2152	2621	7616398195970619	CMakeFiles/SDL2.dir/src/video/SDL_blit_A.c.obj	9c1260b70b4f1219
+2192	2630	7616398196371418	CMakeFiles/SDL2.dir/src/video/SDL_blit_copy.c.obj	dd8c24eeb51e2013
+2377	2645	7616398198220720	CMakeFiles/SDL2.dir/src/video/SDL_shape.c.obj	735f6a70f323155b
+2083	2656	7616398195284060	CMakeFiles/SDL2.dir/src/video/SDL_blit.c.obj	77ab6ed29ab74c4a
+2312	2669	7616398197569288	CMakeFiles/SDL2.dir/src/video/SDL_pixels.c.obj	f67ad536d6622944
+1377	2690	7616398188222536	CMakeFiles/SDL2.dir/src/render/direct3d/SDL_render_d3d.c.obj	694ebe0dafc20d60
+1398	2708	7616398188432906	CMakeFiles/SDL2.dir/src/render/direct3d12/SDL_render_d3d12.c.obj	16c34bb83564f197
+1388	2727	7616398188327678	CMakeFiles/SDL2.dir/src/render/direct3d11/SDL_render_d3d11.c.obj	2c85a89b0529ab16
+2395	2787	7616398198401236	CMakeFiles/SDL2.dir/src/video/SDL_surface.c.obj	e6d2da7f2919ec4b
+2425	2842	7616398198700685	CMakeFiles/SDL2.dir/src/video/SDL_vulkan_utils.c.obj	3f208ba83b35e13d
+2364	2859	7616398198095541	CMakeFiles/SDL2.dir/src/video/SDL_rect.c.obj	a2b0dd56caf099aa
+2285	2870	7616398197303766	CMakeFiles/SDL2.dir/src/video/SDL_clipboard.c.obj	23cc33ae97d548e8
+2305	2881	7616398197504172	CMakeFiles/SDL2.dir/src/video/SDL_fillrect.c.obj	b691b923eed376e6
+2226	2891	7616398196707052	CMakeFiles/SDL2.dir/src/video/SDL_blit_slow.c.obj	54f11fb5df9331b0
+2179	2901	7616398196246137	CMakeFiles/SDL2.dir/src/video/SDL_blit_auto.c.obj	db255133a3cf06d2
+2071	2911	7616398195168220	CMakeFiles/SDL2.dir/src/video/SDL_RLEaccel.c.obj	2693171aee2a6ba0
+2386	2918	7616398198315984	CMakeFiles/SDL2.dir/src/video/SDL_stretch.c.obj	4db38db5234eba61
+2144	2927	7616398195895483	CMakeFiles/SDL2.dir/src/video/SDL_blit_1.c.obj	1e6004389b6cee6f
+2298	2937	7616398197428942	CMakeFiles/SDL2.dir/src/video/SDL_egl.c.obj	41ae73ef880bcd86
+2597	2962	7616398200423767	CMakeFiles/SDL2.dir/src/video/yuv2rgb/yuv_rgb_lsx.c.obj	1f45b39e1d2d8820
+2645	2989	7616398200909763	CMakeFiles/SDL2.dir/src/audio/disk/SDL_diskaudio.c.obj	1494c6bcc3db94b5
+2062	3004	7616398195063048	CMakeFiles/SDL2.dir/src/timer/SDL_timer.c.obj	6679639897775fbe
+2670	3074	7616398201150275	CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullevents.c.obj	ba96d87dfbd71869
+2709	3087	7616398201541131	CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullvideo.c.obj	7bac1cfa7aceda39
+2691	3095	7616398201360731	CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullframebuffer.c.obj	78ef9a8ee38f7efb
+2621	3102	7616398200659266	CMakeFiles/SDL2.dir/src/video/yuv2rgb/yuv_rgb_std.c.obj	a11fb66439cbba34
+2166	3109	7616398196105899	CMakeFiles/SDL2.dir/src/video/SDL_blit_N.c.obj	e6b1f8147f6d46a7
+2657	3115	7616398201019953	CMakeFiles/SDL2.dir/src/joystick/virtual/SDL_virtualjoystick.c.obj	accfb6ad221c4b85
+2788	3166	7616398202323486	CMakeFiles/SDL2.dir/src/video/offscreen/SDL_offscreenframebuffer.c.obj	def40faa3e127ca4
+2631	3176	7616398200764570	CMakeFiles/SDL2.dir/src/audio/dummy/SDL_dummyaudio.c.obj	5c1d3f1d9e0b2453
+2727	3278	7616398201726530	CMakeFiles/SDL2.dir/src/video/offscreen/SDL_offscreenevents.c.obj	9657b95b66e2c95a
+2882	3288	7616398203265774	CMakeFiles/SDL2.dir/src/core/windows/SDL_hid.c.obj	e12f1bb575eb3c59
+2612	3295	7616398200564135	CMakeFiles/SDL2.dir/src/video/yuv2rgb/yuv_rgb_sse.c.obj	72bccb6b77b3012c
+2918	3338	7616398203631441	CMakeFiles/SDL2.dir/src/misc/windows/SDL_sysurl.c.obj	466d6c24f46c78f4
+2860	3347	7616398203045094	CMakeFiles/SDL2.dir/src/video/offscreen/SDL_offscreenvideo.c.obj	b633462ff0228249
+2901	3431	7616398203466084	CMakeFiles/SDL2.dir/src/core/windows/SDL_windows.c.obj	476a86af122d3eea
+2911	3440	7616398203561359	CMakeFiles/SDL2.dir/src/core/windows/SDL_xinput.c.obj	63ce41aab2c86e6d
+3296	3467	7616398207408349	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsvulkan.c.obj	bdac261197c197a0
+2842	3480	7616398202874693	CMakeFiles/SDL2.dir/src/video/offscreen/SDL_offscreenopengles.c.obj	5532c2995e52e200
+3347	3547	7616398207929318	CMakeFiles/SDL2.dir/src/thread/generic/SDL_syscond.c.obj	8b941f8856525559
+2927	3559	7616398203716606	CMakeFiles/SDL2.dir/src/audio/winmm/SDL_winmm.c.obj	8681cef35b3d6375
+2871	3568	7616398203160423	CMakeFiles/SDL2.dir/src/video/offscreen/SDL_offscreenwindow.c.obj	30c0eb346473a09
+2989	3580	7616398204348159	CMakeFiles/SDL2.dir/src/audio/wasapi/SDL_wasapi_win32.c.obj	71fa1d7625e32497
+2564	3586	7616398200088048	CMakeFiles/SDL2.dir/src/video/SDL_yuv.c.obj	e552629171b6bb03
+2937	3597	7616398203821943	CMakeFiles/SDL2.dir/src/audio/directsound/SDL_directsound.c.obj	4efb3838e8490400
+2410	3608	7616398198545319	CMakeFiles/SDL2.dir/src/video/SDL_video.c.obj	93c9f4262bc8a88c
+2891	3675	7616398203370929	CMakeFiles/SDL2.dir/src/core/windows/SDL_immdevice.c.obj	b04c46046c3c2ac0
+3109	3737	7616398205541711	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsmodes.c.obj	eb304529fe67b914
+2963	3752	7616398204072657	CMakeFiles/SDL2.dir/src/audio/wasapi/SDL_wasapi.c.obj	8e693c883707f43e
+3096	3769	7616398205411518	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowskeyboard.c.obj	233261544b4be20a
+3167	3796	7616398206118063	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsopengl.c.obj	cfee9eaa84eb45b5
+3075	3825	7616398205201512	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsevents.c.obj	2e92e27ad56b5409
+3440	3885	7616398208846814	CMakeFiles/SDL2.dir/src/thread/windows/SDL_sysmutex.c.obj	1e628d7de76fbdea
+3004	3901	7616398204493580	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsclipboard.c.obj	b9275b1d98394d1e
+3088	3912	7616398205326272	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsframebuffer.c.obj	def699ac97a7f91d
+3278	3923	7616398207227995	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsshape.c.obj	e31b317a1be22fcd
+3116	3934	7616398205611918	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsmouse.c.obj	35e58527eb4d8442
+3103	3961	7616398205476635	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsmessagebox.c.obj	6b5e1d1ebe296f48
+3675	3972	7616398211206730	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_combined.c.obj	ed4be6673774b823
+3481	4023	7616398209258497	CMakeFiles/SDL2.dir/src/thread/windows/SDL_systhread.c.obj	54d19a2ea7f70668
+3580	4034	7616398210254115	CMakeFiles/SDL2.dir/src/locale/windows/SDL_syslocale.c.obj	9d914d4b8eb103ee
+3753	4043	7616398211983873	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_luna.c.obj	8c2c1920d94e8842
+3432	4052	7616398208771721	CMakeFiles/SDL2.dir/src/thread/windows/SDL_syscond_cv.c.obj	e794ad9a6c2da9c7
+3796	4061	7616398212414640	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_ps4.c.obj	4ae2d39187d67fe0
+3597	4113	7616398210419339	CMakeFiles/SDL2.dir/src/timer/windows/SDL_systimer.c.obj	7da00b020d9a56c4
+3568	4123	7616398210133808	CMakeFiles/SDL2.dir/src/power/windows/SDL_syspower.c.obj	400544301e36f9a5
+3547	4132	7616398209927467	CMakeFiles/SDL2.dir/src/thread/windows/SDL_systls.c.obj	d04ceeb21354034c
+3468	4140	7616398209127887	CMakeFiles/SDL2.dir/src/thread/windows/SDL_syssem.c.obj	40e5c60de3dff6
+3176	4151	7616398206213345	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsopengles.c.obj	1405b1488f26143b
+3737	4158	7616398211818485	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_gamecube.c.obj	1fecba967da0e2c8
+3769	4165	7616398212144082	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_ps3.c.obj	c34c25fc839c45ab
+3912	4246	7616398213573920	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_stadia.c.obj	6d795e6e0485851d
+3559	4262	7616398210043175	CMakeFiles/SDL2.dir/src/sensor/windows/SDL_windowssensor.c.obj	c2dad31ec612034a
+3609	4272	7616398210534617	CMakeFiles/SDL2.dir/src/loadso/windows/SDL_sysloadso.c.obj	3c19ae2a20f92b5e
+3934	4276	7616398213794304	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_steamdeck.c.obj	1b155d3add85b83a
+3826	4280	7616398212711300	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_ps5.c.obj	3981e070a9773653
+3901	4283	7616398213458654	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_shield.c.obj	e355a1c94e5a3616
+3289	4292	7616398207343231	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowsvideo.c.obj	67dba13d62e399ab
+3339	4300	7616398207834193	CMakeFiles/SDL2.dir/src/video/windows/SDL_windowswindow.c.obj	13e3b2b30ed32675
+3923	4305	7616398213679050	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_steam.c.obj	25c1a1c1f4ac4669
+4262	4305	7616398217073586	SDL2main.lib	1f973bc09bdb3b00
+4247	4355	7616398216917821	CMakeFiles/SDL2.dir/src/main/windows/version.rc.res	81c53d2daf2314d
+4034	4362	7616398214790304	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.obj	30afef6df4096a3f
+4024	4376	7616398214687117	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c.obj	3b6ac9bdb7322141
+3885	4381	7616398213297660	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.obj	bb6a3146ad577c5d
+4043	4385	7616398214875532	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_xboxone.c.obj	e3904fe115e3a76f
+3973	4412	7616398214181031	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_wii.c.obj	a7905425ecc2cd8a
+3961	4431	7616398214065486	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_switch.c.obj	95d3eb45de5c524a
+3587	4478	7616398210314193	CMakeFiles/SDL2.dir/src/filesystem/windows/SDL_sysfilesystem.c.obj	d5d1a225138d73fa
+4053	4535	7616398214975795	CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapijoystick.c.obj	a4533ba8072bd13f
+4132	4589	7616398215767897	CMakeFiles/SDL2.dir/src/joystick/windows/SDL_windowsjoystick.c.obj	ea26773049f71e39
+4062	4596	7616398215071223	CMakeFiles/SDL2.dir/src/joystick/windows/SDL_dinputjoystick.c.obj	a993bd993e2c4398
+4140	4603	7616398215853147	CMakeFiles/SDL2.dir/src/joystick/windows/SDL_xinputjoystick.c.obj	7211647288d642b9
+4158	4636	7616398216033422	CMakeFiles/SDL2.dir/src/haptic/windows/SDL_windowshaptic.c.obj	9226564b8b093329
+4151	4644	7616398215958299	CMakeFiles/SDL2.dir/src/haptic/windows/SDL_dinputhaptic.c.obj	3a7c3933023b3aea
+4166	4652	7616398216108558	CMakeFiles/SDL2.dir/src/haptic/windows/SDL_xinputhaptic.c.obj	d5f5fdcd0034ddb7
+4113	5052	7616398215577506	CMakeFiles/SDL2.dir/src/joystick/windows/SDL_rawinputjoystick.c.obj	1e0dad6e452404ec
+4123	5061	7616398215682771	CMakeFiles/SDL2.dir/src/joystick/windows/SDL_windows_gaming_input.c.obj	ce31afac5efadcd8
+5061	5485	7616398229029028	SDL2.dll	828d54e52a88e4b6
+5061	5485	7616398229029028	SDL2.lib	828d54e52a88e4b6
+5486	5796	7616398229314590	CMakeFiles/install.util	b30f371f62c1076a

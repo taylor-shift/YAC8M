@@ -1,0 +1,9 @@
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/sdl_headers_copy.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/SDL2main.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/SDL2.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/uninstall.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/edit_cache.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/rebuild_cache.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/list_install_components.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/install.dir
+C:/Users/Phaseon/source/repos/CHIP-8 Emulator/vcpkg_installed/vcpkg/blds/sdl2/x64-windows-dbg/CMakeFiles/install/local.dir
