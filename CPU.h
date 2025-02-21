@@ -23,8 +23,8 @@ private:
 	std::array<uint16_t, 16> stack{};
 
 	// Timers (60Hz)
-	static constexpr uint8_t SYSTEM_CLOCK_HZ = 250;
-	static constexpr auto TIMER_INTERVAL = std::chrono::milliseconds(1000 / SYSTEM_CLOCK_HZ);
+	static constexpr uint8_t TIMER_FREQUENCY = 60;
+	static constexpr auto TIMER_INTERVAL = std::chrono::microseconds(1000000 / TIMER_FREQUENCY);
 	uint8_t delayTimer{ 0 };
 	uint8_t soundTimer{ 0 };
 	std::chrono::steady_clock::time_point lastTimerUpdate;
@@ -64,19 +64,23 @@ protected:
 	}
 
 	// Timers
-	void setDelayTimer() {
-		delayTimer = getVRegister(0);
+	void setDelayTimer(uint8_t value) {
+		delayTimer = value;
 	}
-	void setSoundTimer() {
-		soundTimer = getVRegister(0);
+	void setSoundTimer(uint8_t value) {
+		soundTimer = value;
 	}
-	void updateTimers() {
-		auto now = std::chrono::steady_clock::now();
-		if (now - lastTimerUpdate >= TIMER_INTERVAL) {
-			if (delayTimer > 0) delayTimer--;
-			if (soundTimer > 0) soundTimer--;
-			lastTimerUpdate = now;
-		}
+	
+
+	// Wipe memory + redo layout
+	void reset() {
+		V.fill(0);
+		I = 0;
+		PC = Memory::BIN_START;
+		stack.fill(0);
+		SP = 0;
+		delayTimer = 0;
+		soundTimer = 0;
 	}
 
 	// Make it so the InstructionFactory class
@@ -90,16 +94,15 @@ public:
 	uint8_t getDelayTimer() const { return delayTimer; }
 	uint8_t getSoundTimer() const { return soundTimer; }
 
+	void updateTimers() {
+		auto now = std::chrono::steady_clock::now();
+		auto elapsed = now - lastTimerUpdate;
 
-	// System operations
-	void reset() {
-		V.fill(0);
-		I = 0;
-		PC = Memory::BIN_START;
-		stack.fill(0);
-		SP = 0;
-		delayTimer = 0;
-		soundTimer = 0;
+		if (elapsed >= TIMER_INTERVAL) {
+			if (delayTimer > 0) delayTimer--;
+			if (soundTimer > 0) soundTimer--;
+			lastTimerUpdate = now;
+		}
 	}
 
 	void cycle() {
@@ -114,8 +117,6 @@ public:
 		catch (const std::exception& ex) {
 			std::cerr << "Error executing instruction: " << ex.what() << "\n";
 		}
-
-		updateTimers();
 	}
 
 	// Singleton interface

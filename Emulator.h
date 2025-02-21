@@ -14,7 +14,7 @@
 class EmulatorConfig {
 public:
 	// Display configuration
-	static constexpr int WINDOW_SCALE = 12;  // Scale up CHIP-8's 64x32 display
+	static constexpr int WINDOW_SCALE = 24;  // Scale up CHIP-8's 64x32 display
 	static constexpr int WINDOW_WIDTH = Display::WIDTH_PX * WINDOW_SCALE;
 	static constexpr int WINDOW_HEIGHT = Display::HEIGHT_PX * WINDOW_SCALE;
 
@@ -23,8 +23,10 @@ public:
 	static constexpr int AUDIO_BUFFER_SIZE = 512;
 
 	// Timing configuration
-	static constexpr int CPU_FREQUENCY = 2048;  // Instructions per second
+	static constexpr int CPU_FREQUENCY = 100000;  // Instructions per second
+	static constexpr int TIMER_FREQUENCY = 60;  // 60Hz for timers
 	static constexpr auto FRAME_DURATION = std::chrono::microseconds(1000000 / CPU_FREQUENCY);
+	static constexpr auto TIMER_DURATION = std::chrono::microseconds(1000000 / TIMER_FREQUENCY);
 };
 
 class Emulator {
@@ -92,7 +94,7 @@ private:
 
 		// Create a simple square wave
 		audioBuffer.resize(512);
-		for (int i = 0; i < audioBuffer.size() / 2; i++) {
+		for (size_t i = 0; i < audioBuffer.size() / 2; i++) {
 			audioBuffer[i] = 32;      // Half amplitude for first half
 			audioBuffer[i + audioBuffer.size() / 2] = 224; // Full amplitude for second half
 		}
@@ -170,15 +172,22 @@ private:
 		SDL_RenderClear(renderer);
 
 		// Set draw color to white for pixels
-		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+		static std::vector<SDL_Point> points;
+		points.clear();
+		points.reserve(Display::WIDTH_PX * Display::HEIGHT_PX);
 
 		// Draw each pixel
 		for (int y = 0; y < Display::HEIGHT_PX; y++) {
 			for (int x = 0; x < Display::WIDTH_PX; x++) {
 				if (display.getPixel(x, y)) {
-					SDL_RenderDrawPoint(renderer, x, y);
+					points.push_back({ x, y });
 				}
 			}
+		}
+
+		if (!points.empty()) {
+			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+			SDL_RenderDrawPoints(renderer, points.data(), points.size());
 		}
 
 		SDL_RenderPresent(renderer);
@@ -190,15 +199,13 @@ private:
 			SDL_QueueAudio(
 				audioDevice,
 				audioBuffer.data(),
-				audioBuffer.size()
+				static_cast<uint32_t>(audioBuffer.size()) // Capped at 512 bytes so safe cast
 			);
 		}
 		else {
 			SDL_ClearQueuedAudio(audioDevice);
 		}
-
-																																																																																																																		}
-																																																				
+																																																																																																																		}																																																			
 public:
 	Emulator() :
 		window(nullptr),
@@ -233,22 +240,38 @@ public:
 
 	void run() {
 		auto lastCycleTime = std::chrono::high_resolution_clock::now();
+		auto lastTimerUpdate = lastCycleTime;
+		auto lastRenderTime = lastCycleTime;
+
+		const auto frameDuration = EmulatorConfig::FRAME_DURATION;
+		const auto timerDuration = EmulatorConfig::TIMER_DURATION;
+
+		std::chrono::microseconds cycleAccumulator(0);
+		std::chrono::microseconds timerAccumulator(0);
 
 		while (running) {
 			auto currentTime = std::chrono::high_resolution_clock::now();
-			auto elapsed = currentTime - lastCycleTime;
+			auto elapsedTime = std::chrono::duration_cast<std::chrono::microseconds>(
+				currentTime - lastCycleTime);
 
-			// Execute CPU cycle if enough time has passed
-			if (elapsed >= EmulatorConfig::FRAME_DURATION) {
-				handleEvents();
+			lastCycleTime = currentTime;
+			cycleAccumulator += elapsedTime;
+			timerAccumulator += elapsedTime;
+
+			handleEvents();
+
+			while (cycleAccumulator >= frameDuration) {
 				cpu.cycle();
-				render();
-				updateAudio();
-				lastCycleTime = currentTime;
+				cycleAccumulator -= frameDuration;
 			}
-			else {
-				// Sleep for a bit to prevent busy-waiting
-				std::this_thread::sleep_for(std::chrono::microseconds(100));
+
+			if (timerAccumulator >= timerDuration) {
+				cpu.updateTimers();
+				timerAccumulator -= timerDuration;
+			}
+
+			if (display.needsRedraw()) {
+				render();
 			}
 		}
 	}

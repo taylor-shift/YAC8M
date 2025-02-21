@@ -54,9 +54,9 @@ namespace {
 }
 
 const std::unordered_map<uint16_t, std::pair<InstructionHandler, std::string>>
-InstructionSet::instructions = 
+InstructionSet::instructions =
 // System and Flow Control Instructions
-{{0x00E0, {
+{ {0x00E0, {
 	[](CPU& cpu, const DecodedInstruction&) {
 		// Clear the display - straightforward mapping to display primitive
 		cpu.getDisplay().clear();
@@ -67,22 +67,38 @@ InstructionSet::instructions =
 	[](CPU& cpu, const DecodedInstruction&) {
 		// Return from subroutine
 		// (Pop last stack frame and set program counter)
-		cpu.setPCRegister(cpu.pop());
+		uint16_t returnAddr = cpu.pop();
+		if (returnAddr < Memory::MAX_SIZE) {
+			cpu.setPCRegister(returnAddr);
+		}
+		else {
+			throw std::out_of_range("Return address out of bounds");
+		}
 	},
 	RET_DESC
 }},
 { 0x1000, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Jump - direct update to program counter
-		cpu.setPCRegister(i.nnn);
+		if (i.nnn >= Memory::BIN_START && i.nnn < Memory::MAX_SIZE) {
+			cpu.setPCRegister(i.nnn);
+		}
+		else {
+			throw std::out_of_range("Jump address out of bounds");
+		};
 	},
 	JP_DESC
 }},
 { 0x2000, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Call subroutine - save return address then jump
-		cpu.push(cpu.getPCRegister());
-		cpu.setPCRegister(i.nnn);
+		if (i.nnn >= Memory::BIN_START && i.nnn < Memory::MAX_SIZE) {
+			cpu.push(cpu.getPCRegister());
+			cpu.setPCRegister(i.nnn);
+		}
+		else {
+			throw std::out_of_range("Call address out of bounds");
+		}
 	},
 	CALL_DESC
 }},
@@ -92,27 +108,42 @@ InstructionSet::instructions =
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Skip if equal
 		if (cpu.getVRegister(i.x) == i.nn) {
-			cpu.setPCRegister(cpu.getPCRegister() + 2);
+			uint16_t newPC = cpu.getPCRegister() + 2;
+			if (newPC < Memory::MAX_SIZE) {
+				cpu.setPCRegister(newPC);
+			}
+		else {
+			throw std::out_of_range("PC out of bounds after skip");
 		}
-	},
+	}},
 	SE_VX_NN_DESC
 }},
 { 0x4000, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Skip if not equal
 		if (cpu.getVRegister(i.x) != i.nn) {
-			cpu.setPCRegister(cpu.getPCRegister() + 2);
+			uint16_t newPC = cpu.getPCRegister() + 2;
+			if (newPC < Memory::MAX_SIZE) {
+				cpu.setPCRegister(newPC);
+			}
+		else {
+			throw std::out_of_range("PC out of bounds after skip");
 		}
-	},
+	}},
 	SNE_VX_NN_DESC
 }},
 { 0x5000, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Skip if VX == VY
 		if (cpu.getVRegister(i.x) == cpu.getVRegister(i.y)) {
-			cpu.setPCRegister(cpu.getPCRegister() + 2);
+			uint16_t newPC = cpu.getPCRegister() + 2;
+			if (newPC < Memory::MAX_SIZE) {
+				cpu.setPCRegister(newPC);
+			}
+		else {
+			throw std::out_of_range("PC out of bounds after skip");
 		}
-	},
+	}},
 	SE_VX_VY_DESC
 }},
 
@@ -213,9 +244,14 @@ InstructionSet::instructions =
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Skip if VX != VY
 		if (cpu.getVRegister(i.x) != cpu.getVRegister(i.y)) {
-			cpu.setPCRegister(cpu.getPCRegister() + 2);
+			uint16_t newPC = cpu.getPCRegister() + 2;
+			if (newPC < Memory::MAX_SIZE) {
+				cpu.setPCRegister(newPC);
+			}
+		else {
+			throw std::out_of_range("PC out of bounds after skip");
 		}
-	},
+	}},
 	SNE_VX_VY_DESC,
 }},
 // Memory Operations
@@ -272,14 +308,14 @@ InstructionSet::instructions =
 { 0xF015, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Set delay timer to value in VX
-		cpu.setDelayTimer();
+		cpu.setDelayTimer(cpu.getVRegister(i.x));
 	},
 	LD_DT_VX_DESC
 }},
 { 0xF018, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Set sound timer to value in VX
-		cpu.setSoundTimer();
+		cpu.setDelayTimer(cpu.getVRegister(i.x));
 	},
 	LD_ST_VX_DESC
 }},
@@ -311,13 +347,17 @@ InstructionSet::instructions =
 } },
 { 0xE09E, {
 	[](CPU& cpu, const DecodedInstruction& i) {
-		// Skip instruction if key code at VX
-		// is pressed
+		// Skip instruction if key code at VX is pressed
 		uint8_t key = cpu.getVRegister(i.x);
 		if (Keyboard::getInstance().getKeyState(key) == KeyState::Released) {
-			cpu.setPCRegister(cpu.getPCRegister() + 2);
+			uint16_t newPC = cpu.getPCRegister() + 2;
+			if (newPC < Memory::MAX_SIZE) {
+				cpu.setPCRegister(newPC);
+			}
+		else {
+			throw std::out_of_range("PC out of bounds after skip");
 		}
-	},
+	}},
 	SKP_VX_DESC,
 }},
 { 0xE0A1, {
@@ -337,11 +377,16 @@ InstructionSet::instructions =
 			cpu.setVRegister(i.x, *keyPressed);
 			keyboard.clearLastKeyPressed();
 		}
-		else {
+		 else {
 			// If no key is pressed, repeat this instruction
-			cpu.setPCRegister(cpu.getPCRegister() - 2);
-		}
-	},
+			uint16_t newPC = cpu.getPCRegister() - 2;
+			if (newPC < Memory::MAX_SIZE) {
+				cpu.setPCRegister(newPC);
+			}
+			else {
+				throw std::out_of_range("PC out of bounds after key wait");
+			}
+	}},
 	LD_VX_K_DESC
 }},
 { 0xF029, {
@@ -363,9 +408,14 @@ InstructionSet::instructions =
 }},
 { 0xB000, {
 	[](CPU& cpu, const DecodedInstruction& i) {
-		// Jump NNN bytes from V0 
-		uint16_t destAddr = i.nnn + cpu.getVRegister(i.x);
-		cpu.setPCRegister(destAddr);
+		// Jump NNN bytes from V0
+		uint16_t destAddr = i.nnn + cpu.getVRegister(0);
+		if (destAddr < Memory::MAX_SIZE) {
+			cpu.setPCRegister(destAddr);
+		}
+		else {
+			throw std::out_of_range("Jump address out of bounds");
+		}
 	},
 	JP_V0_DESC
 }}

@@ -2,6 +2,7 @@
 #include <array>
 #include <cstdint>
 #include <optional>
+#include <SDL2/SDL_Keycode.h>
 
 enum class KeyState {
     Released,
@@ -23,23 +24,24 @@ private:
     std::optional<uint8_t> lastKeyPressed;
 
     // Default key mappings (can be customized)
+	// from SDL to expected CHIP-8 scan code
     static constexpr std::array<KeyMapping, 16> DEFAULT_MAPPING = { {
-        {0x31, 0x1}, // 1 -> 1
-        {0x32, 0x2}, // 2 -> 2
-        {0x33, 0x3}, // 3 -> 3
-        {0x43, 0xC}, // C -> C
-        {0x34, 0x4}, // 4 -> 4
-        {0x35, 0x5}, // 5 -> 5
-        {0x36, 0x6}, // 6 -> 6
-        {0x44, 0xD}, // D -> D
-        {0x37, 0x7}, // 7 -> 7
-        {0x38, 0x8}, // 8 -> 8
-        {0x39, 0x9}, // 9 -> 9
-        {0x45, 0xE}, // E -> E
-        {0x41, 0xA}, // A -> A
-        {0x30, 0x0}, // 0 -> 0
-        {0x42, 0xB}, // B -> B
-        {0x46, 0xF}  // F -> F
+        {SDLK_1, 0x1}, // 1 -> 1
+        {SDLK_2, 0x2}, // 2 -> 2
+        {SDLK_3, 0x3}, // 3 -> 3
+        {SDLK_c, 0xC}, // C -> C
+        {SDLK_4, 0x4}, // 4 -> 4
+        {SDLK_5, 0x5}, // 5 -> 5
+        {SDLK_6, 0x6}, // 6 -> 6
+        {SDLK_d, 0xD}, // D -> D
+        {SDLK_7, 0x7}, // 7 -> 7
+        {SDLK_8, 0x8}, // 8 -> 8
+        {SDLK_9, 0x9}, // 9 -> 9
+        {SDLK_e, 0xE}, // E -> E
+        {SDLK_a, 0xA}, // A -> A
+        {SDLK_0, 0x0}, // 0 -> 0
+        {SDLK_b, 0xB}, // B -> B
+        {SDLK_f, 0xF}  // F -> F
     } };
 
     Keyboard() {
