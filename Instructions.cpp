@@ -315,7 +315,7 @@ InstructionSet::instructions =
 { 0xF018, {
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Set sound timer to value in VX
-		cpu.setDelayTimer(cpu.getVRegister(i.x));
+		cpu.setSoundTimer(cpu.getVRegister(i.x));
 	},
 	LD_ST_VX_DESC
 }},
@@ -349,7 +349,7 @@ InstructionSet::instructions =
 	[](CPU& cpu, const DecodedInstruction& i) {
 		// Skip instruction if key code at VX is pressed
 		uint8_t key = cpu.getVRegister(i.x);
-		if (Keyboard::getInstance().getKeyState(key) == KeyState::Released) {
+		if (Keyboard::getInstance().getKeyState(key) == KeyState::Pressed) {
 			uint16_t newPC = cpu.getPCRegister() + 2;
 			if (newPC < Memory::MAX_SIZE) {
 				cpu.setPCRegister(newPC);

@@ -23,10 +23,9 @@ public:
 	static constexpr int AUDIO_BUFFER_SIZE = 512;
 
 	// Timing configuration
-	static constexpr int CPU_FREQUENCY = 100000;  // Instructions per second
-	static constexpr int TIMER_FREQUENCY = 60;  // 60Hz for timers
-	static constexpr auto FRAME_DURATION = std::chrono::microseconds(1000000 / CPU_FREQUENCY);
-	static constexpr auto TIMER_DURATION = std::chrono::microseconds(1000000 / TIMER_FREQUENCY);
+	static constexpr int TARGET_FPS = 120;
+	static constexpr int FRAME_DELAY_MS = 1000 / TARGET_FPS;
+	static constexpr int INSTRUCTIONS_PER_FRAME = 15;
 };
 
 class Emulator {
@@ -225,11 +224,7 @@ public:
 	}
 
 	bool start(const std::string& romFile) {
-		if (!initialize()) {
-			return false;
-		}
-
-		if (!loadROM(romFile)) {
+		if (!initialize() || !loadROM(romFile)) {
 			return false;
 		}
 
@@ -239,39 +234,37 @@ public:
 	}
 
 	void run() {
-		auto lastCycleTime = std::chrono::high_resolution_clock::now();
-		auto lastTimerUpdate = lastCycleTime;
-		auto lastRenderTime = lastCycleTime;
-
-		const auto frameDuration = EmulatorConfig::FRAME_DURATION;
-		const auto timerDuration = EmulatorConfig::TIMER_DURATION;
-
-		std::chrono::microseconds cycleAccumulator(0);
-		std::chrono::microseconds timerAccumulator(0);
+		// For tracking when to update timers
+		auto lastTimerUpdate = std::chrono::steady_clock::now();
 
 		while (running) {
-			auto currentTime = std::chrono::high_resolution_clock::now();
-			auto elapsedTime = std::chrono::duration_cast<std::chrono::microseconds>(
-				currentTime - lastCycleTime);
+			auto frameStart = SDL_GetTicks();  // Start of frame timing
 
-			lastCycleTime = currentTime;
-			cycleAccumulator += elapsedTime;
-			timerAccumulator += elapsedTime;
-
+			// Handle input
 			handleEvents();
 
-			while (cycleAccumulator >= frameDuration) {
+			// Run a batch of CPU instructions
+			for (int i = 0; i < EmulatorConfig::INSTRUCTIONS_PER_FRAME; i++) {
 				cpu.cycle();
-				cycleAccumulator -= frameDuration;
 			}
 
-			if (timerAccumulator >= timerDuration) {
+			// Update 60Hz timers
+			auto now = std::chrono::steady_clock::now();
+			if (std::chrono::duration_cast<std::chrono::milliseconds>(
+				now - lastTimerUpdate).count() >= 16) {
 				cpu.updateTimers();
-				timerAccumulator -= timerDuration;
+				lastTimerUpdate = now;
 			}
 
+			// Render if needed
 			if (display.needsRedraw()) {
 				render();
+			}
+
+			// Delay to maintain target framerate
+			int frameTime = SDL_GetTicks() - frameStart;
+			if (frameTime < EmulatorConfig::FRAME_DELAY_MS) {
+				SDL_Delay(EmulatorConfig::FRAME_DELAY_MS - frameTime);
 			}
 		}
 	}
